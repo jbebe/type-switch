@@ -1,5 +1,5 @@
 {
-  "name": "type-switch",
+  "name": "@bajuh/type-switch",
   "version": "1.0.1",
   "description": "switch on types - easier way to overload functions",
   "main": "dist/index.js",
@@ -15,7 +15,9 @@
   "scripts": {
     "build": "tsc -p src",
     "watch": "tsc -w -p src",
-    "test": "mocha -r ts-node/register test/test.ts"
+    "test": "mocha -r ts-node/register test/test.ts",
+    "package:publish": "npm publish --access public",
+    "package:login": "npm login --scope=@bajuh"
   },
   "repository": {
     "type": "git",
