@@ -1,6 +1,6 @@
 {
   "name": "@bajuh/type-switch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "switch on types - easier way to overload functions",
   "main": "dist/index.js",
   "dependencies": {},
@@ -24,5 +24,15 @@
     "url": "https://github.com/jbebe/type-switch"
   },
   "author": "Balint Juhasz",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "type",
+    "switch",
+    "case",
+    "overload",
+    "helper",
+    "utility",
+    "typescript",
+    "es2016"
+  ]
 }
