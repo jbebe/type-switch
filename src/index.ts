@@ -37,7 +37,7 @@ const EmptyFunction = () => {
 // Base and Interface
 //
 
-interface IMatcher {
+export interface IMatcher {
 
 	matches(key: string): boolean;
 }

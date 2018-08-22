@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Fallthrough {
 }
+exports.Fallthrough = Fallthrough;
 exports.FALL_THROUGH = new Fallthrough();
 const Type = {
     Undefined: 'undefined',
@@ -38,6 +39,7 @@ class BaseType {
         return false;
     }
 }
+exports.BaseType = BaseType;
 class DefaultType extends BaseType {
     constructor(response) {
         super(response);
@@ -49,6 +51,7 @@ class DefaultType extends BaseType {
         return false;
     }
 }
+exports.DefaultType = DefaultType;
 function Default(_responseValue) {
     let responseValue;
     if (_responseValue.constructor === Function) {
@@ -73,6 +76,7 @@ class CaseType extends BaseType {
         return this.fallthrough;
     }
 }
+exports.CaseType = CaseType;
 function Case(..._types) {
     let types = _types.map(NameOfType);
     return (maybeFallthrough, maybeResponseValue) => {
