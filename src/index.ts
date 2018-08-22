@@ -2,7 +2,7 @@
 // Type
 //
 
-class Fallthrough {}
+export class Fallthrough {}
 export const FALL_THROUGH = new Fallthrough();
 
 const Type = {
@@ -42,7 +42,7 @@ interface IMatcher {
 	matches(key: string): boolean;
 }
 
-abstract class BaseType implements IMatcher {
+export abstract class BaseType implements IMatcher {
 
 	protected constructor(
 		public response: Function
@@ -62,7 +62,7 @@ abstract class BaseType implements IMatcher {
 // Default
 //
 
-class DefaultType extends BaseType {
+export class DefaultType extends BaseType {
 
 	constructor(
 		response: Function
@@ -96,7 +96,7 @@ export function Default(_responseValue: any): DefaultType {
 // Case
 //
 
-class CaseType extends BaseType {
+export class CaseType extends BaseType {
 
 	constructor(
 		public types: string[],
